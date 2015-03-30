@@ -1,3 +1,6 @@
+body{
+    margin: 0;
+}
 
 /* Huvudmeny */
 nav{
@@ -37,14 +40,48 @@ header{
 
     /* Toppbild text */
     header h1{
-        font-family: "Open Sans";
+        font-family: 'Open Sans', sans-serif;
+        font-weight: 400;
         width: 100%;
         text-align: center;
+        margin-top: 10px;
+        margin-bottom: 10px;
     }
         /* Toppbild beskrivande text */
         .header_description{
+            font-family: 'Open Sans', sans-serif;
+            font-weight: 300;
             width: 100%;
             text-align: center;
-            font-size: 0.5em;
+            font-size: 0.8em;
+            margin: 0;
             
         }
+
+#wrapper{
+    margin: 0 auto;
+    width: 100%;
+    max-width: 600px;
+    margin-top: 23px;
+
+}
+
+
+/* Om mig sidan */
+.about_me_pic{
+    width: 40%;
+    float: left;
+}
+    .about_me_pic img{
+        max-width: 200px;
+        width: 100%;
+        border-radius: 50%;
+    }
+
+.about_me{
+    width: 60%;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 0.9em;
+    float: right;
+    
+}
