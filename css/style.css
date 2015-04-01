@@ -8,15 +8,15 @@ nav{
 }
     nav ul{
         list-style-type: none;
-        margin-top: 5px;
-        margin-bottom: 5px;
         padding-left: 5px;
+        margin: 0;
     }
         nav ul li{
             display: inline-block;
             margin-left: 5px;
             margin-right: 5px;
-            font-size: 15px;
+            line-height: 30px;
+            font-size: 13px;
             font-family: 'Open Sans', sans-serif;
             font-weight: 300;
         }
@@ -61,15 +61,68 @@ header{
 #wrapper{
     margin: 0 auto;
     width: 100%;
-    max-width: 600px;
+    max-width: 750px;
     margin-top: 23px;
 
 }
 
+/* Galleri sidan (de olika albumen)*/
+.category_pic{
+    display: inline-block;
+    overflow: hidden;
+    width:215px;
+    position: relative;
+    margin-top: 25px;
+    margin-left: 15px;
+    margin-right: 15px;
+    border-radius: 50%;
+    
+
+    
+}
+
+.category_pic:hover > .hidden_text{
+    top: 0;
+    
+}
+
+    .category_pic img{
+        width: 100%;
+        height: auto;
+        
+    }
+
+.hidden_text{
+    background: rgba(0, 0, 0, 0.5);
+    width: 100%;
+    height: 215px;
+    position: absolute;
+    top: 215px;
+    transition: top ease 0.5s;
+    box-sizing: border-box;
+    padding: 15px 25px 25px 25px;
+}
+    .hidden_text h4{
+        color: #fff;
+        font-size: 1.5em;
+        font-family: 'Open Sans', sans-serif;
+        text-align: center;
+        margin-bottom: 15px;
+        margin-top: 15px;
+        
+    }
+        .hidden_text p{
+            color: #fff;
+            font-size: 0.8em;
+            font-weight: 300;
+            font-family: 'Open Sans', sans-serif;
+            text-align: center;
+        }
+
 
 /* Om mig sidan */
 .about_me_pic{
-    width: 40%;
+    width: 25%;
     float: left;
 }
     .about_me_pic img{
@@ -79,9 +132,23 @@ header{
     }
 
 .about_me{
-    width: 60%;
+    width: 70%;
     font-family: 'Open Sans', sans-serif;
     font-size: 0.9em;
     float: right;
     
 }
+.about_me_competens h3{
+    
+}
+
+.about_me_competens{
+    font-family: 'Open Sans', sans-serif;
+    width: 100%;
+    font-size: 0.9em;
+    margin-top: 10px;
+    float: left;
+    
+}
+
+
