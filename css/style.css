@@ -1,32 +1,15 @@
 body{
     margin: 0;
+    min-width: 320px;
+    line-height: 1.4;
+    font-size: 17px;
+    font-family: 'Open Sans', sans-serif;
 }
 
-/* Huvudmeny */
-nav{
-    width: 100%;
+*{
+    box-sizing: border-box;
 }
-    nav ul{
-        list-style-type: none;
-        padding-left: 5px;
-        margin: 0;
-    }
-        nav ul li{
-            display: inline-block;
-            margin-left: 5px;
-            margin-right: 5px;
-            line-height: 30px;
-            font-size: 13px;
-            font-family: 'Open Sans', sans-serif;
-            font-weight: 300;
-        }
-            nav ul li a{
-                text-decoration: none;
-                color: #000;
-            }
-            nav ul li a:hover{
-                
-            }
+
 /* Toppbild */
 header{
     background: url(../img/header.jpg);
@@ -40,7 +23,6 @@ header{
 
     /* Toppbild text */
     header h1{
-        font-family: 'Open Sans', sans-serif;
         font-weight: 400;
         width: 100%;
         text-align: center;
@@ -49,106 +31,114 @@ header{
     }
         /* Toppbild beskrivande text */
         .header_description{
-            font-family: 'Open Sans', sans-serif;
             font-weight: 300;
             width: 100%;
             text-align: center;
             font-size: 0.8em;
             margin: 0;
-            
         }
-
 #wrapper{
     margin: 0 auto;
-    width: 100%;
-    max-width: 750px;
-    margin-top: 23px;
-
+    width: 100%; 
 }
-
-/* Galleri sidan (de olika albumen)*/
-.category_pic{
-    display: inline-block;
-    overflow: hidden;
-    width:215px;
-    position: relative;
-    margin-top: 25px;
-    margin-left: 15px;
-    margin-right: 15px;
-    border-radius: 50%;
-    
-
-    
-}
-
-.category_pic:hover > .hidden_text{
-    top: 0;
-    
-}
-
-    .category_pic img{
-        width: 100%;
-        height: auto;
-        
-    }
-
-.hidden_text{
-    background: rgba(0, 0, 0, 0.5);
-    width: 100%;
-    height: 215px;
-    position: absolute;
-    top: 215px;
-    transition: top ease 0.5s;
-    box-sizing: border-box;
-    padding: 15px 25px 25px 25px;
-}
-    .hidden_text h4{
-        color: #fff;
-        font-size: 1.5em;
-        font-family: 'Open Sans', sans-serif;
-        text-align: center;
-        margin-bottom: 15px;
-        margin-top: 15px;
-        
-    }
-        .hidden_text p{
-            color: #fff;
-            font-size: 0.8em;
-            font-weight: 300;
-            font-family: 'Open Sans', sans-serif;
-            text-align: center;
-        }
-
 
 /* Om mig sidan */
+.about_background{
+    overflow: hidden;
+    background: #f7f7f7;
+    width: 100%;
+}
+.about_me_box{
+    margin: 0 auto;
+    max-width: 750px;
+}
 .about_me_pic{
     width: 25%;
     float: left;
+    padding-top: 60px;
 }
     .about_me_pic img{
         max-width: 200px;
         width: 100%;
-        border-radius: 50%;
     }
 
 .about_me{
     width: 70%;
-    font-family: 'Open Sans', sans-serif;
-    font-size: 0.9em;
     float: right;
-    
+    padding-top: 40px;
+    padding-bottom: 40px;
 }
-.about_me_competens h3{
-    
+.about_me p{
+    margin-top: 0px;
+}
+.about_me_competens h2{   
 }
 
 .about_me_competens{
-    font-family: 'Open Sans', sans-serif;
     width: 100%;
-    font-size: 0.9em;
     margin-top: 10px;
     float: left;
-    
+    padding-bottom: 40px;
+}
+.about_me_competens a{
+    text-decoration: none;
+    color: #616161;
 }
 
+.about_me_work{
+    float: right;
+    width: 75%;
+    padding-bottom: 40px;
+}
+.about_me_work h3{
+    margin-bottom: 5px;
+    margin-top: 5px;
+}
+
+.about_me_work p{
+    margin-top: 5px;
+    margin-bottom: 5px;
+}
+.about_me_work p i{
+    margin-top: 0px;
+    margin-bottom: 0px;
+}
+.about_me_year{
+    float: left;
+    width: 25%;
+}
+
+/* Responsiv sida*/
+
+/*Minsta mobilbredd*/
+
+@media (min-width: 320px) and (max-width:550px){
+    #wrapper{
+    margin: 0 auto;
+    width: 100%;
+    margin-top: 23px;
+}
+    .about_me_container{
+        padding: 20px;
+    }
+    .about_me_pic{
+    width: 100%;
+    float:;
+}
+        .about_me_pic img{
+        max-width: 200px;
+        width: 100%;
+        }
+
+.about_me{
+    width: 100%;
+    font-size: 0.9em;
+    float:;
+    
+}
+    
+    
+
+}
+    
 
