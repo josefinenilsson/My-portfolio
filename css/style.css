@@ -10,6 +10,10 @@ body{
     box-sizing: border-box;
 }
 
+h2{
+    padding-bottom: 20px;
+}
+
 /* Toppbild */
 header{
     background: url(../img/header.jpg);
@@ -99,7 +103,7 @@ header{
     margin-top: 5px;
     margin-bottom: 5px;
 }
-.about_me_work p i{
+.about_me_work p em{
     margin-top: 0px;
     margin-bottom: 0px;
 }
@@ -108,6 +112,44 @@ header{
     width: 25%;
 }
 
+.about_me_project{
+    width: 100%;
+    margin-top: 10px;
+    float: left;
+    padding-bottom: 40px;
+}
+.about_me_project p{
+    padding-bottom: 10px;
+    margin: 0;
+}
+.about_me_project p em a{
+}
+.about_me_project h3{
+    margin:0;
+}
+.about_text{
+    padding-bottom: 30px;
+}
+
+footer{
+    background:#b13033;
+    width: 100%;
+    overflow: hidden;
+}
+.footer{
+    margin: 0 auto;
+    max-width: 750px;
+    padding: 30px;
+}
+footer .footer_adress{
+    float: left;
+    color:#FFF;
+    
+}
+footer .footer_contact{
+    float: right;
+    color: #fff;
+}
 /* Responsiv sida*/
 
 /*Minsta mobilbredd*/
@@ -121,6 +163,9 @@ header{
     .about_me_container{
         padding: 20px;
     }
+    .about_me_box{
+        padding: 20px;
+    }
     .about_me_pic{
     width: 100%;
     float:;
@@ -132,11 +177,32 @@ header{
 
 .about_me{
     width: 100%;
-    font-size: 0.9em;
     float:;
-    
+    font-size: 15px;  
 }
-    
+.about_me_work{
+    float: left;
+    width: 75%;
+    padding-bottom: 40px;
+    font-size: 15px;
+}    
+.about_me_year{
+    float: right;
+    width: 25%;
+    font-size: 10px;
+}
+.about_text{
+    padding:20px;
+    font-size: 15px;
+}
+.about_me_project h3{
+    margin:0;
+    font-size: 20px;
+} 
+.about_me_project p{
+    font-size: 15px;
+
+}
     
 
 }
